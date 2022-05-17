@@ -1,0 +1,83 @@
+package aulas;
+
+import java.util.Scanner;
+
+//import aulas.entities.Funcionario;
+import aulas.entities.FuncionarioTercerizado;
+import aulas.entities.Pessoa;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Scanner leia = new Scanner(System.in);
+
+		/*Pessoa pessoa = new Funcionario();
+		Funcionario funcionario = (Funcionario) pessoa;
+		
+		System.out.print("Entre com o nome: ");
+		funcionario.setNome(leia.nextLine());
+		
+		System.out.print("Entre com a idade: ");
+		funcionario.setIdade(leia.nextInt());
+		
+		System.out.print("Entre com o cpf: ");
+		funcionario.setCpf(leia.nextLong());
+		
+		System.out.print("Entre com a data de nascimento: ");
+		leia.nextLine();
+		funcionario.setDataNascimento(leia.nextLine());
+		
+		System.out.println("\n--------***********-------------\n");
+		
+		System.out.print("Entre com o salario bruto: ");
+		funcionario.setSalarioBruto(leia.nextDouble());
+		
+		System.out.print("Entre com a porcentagem do inss: ");
+		funcionario.setInss(leia.nextDouble());
+		
+		System.out.print("Entre com a porcentagem do Imposto de Renda: ");
+		funcionario.setIr(leia.nextDouble());
+		
+		System.out.println("\n--------***********-------------\n");
+		
+		System.out.println(funcionario);*/
+
+
+		Pessoa pessoa = new FuncionarioTercerizado();
+		FuncionarioTercerizado funcionario = (FuncionarioTercerizado) pessoa;
+
+		System.out.print("Entre com o nome: ");
+		funcionario.setNome(leia.nextLine());
+
+		System.out.print("Entre com a idade: ");
+		funcionario.setIdade(leia.nextInt());
+
+		System.out.print("Entre com o cpf: ");
+		funcionario.setCpf(leia.nextLong());
+
+		System.out.print("Entre com a data de nascimento: ");
+		leia.nextLine();
+		funcionario.setDataNascimento(leia.nextLine());
+
+		System.out.println("\n--------***********-------------\n");
+
+		System.out.print("Entre com o salario bruto: ");
+		funcionario.setSalarioBruto(leia.nextDouble());
+
+		System.out.print("Entre com a porcentagem do inss: ");
+		funcionario.setInss(leia.nextDouble());
+
+		System.out.print("Entre com a porcentagem do Imposto de Renda: ");
+		funcionario.setIr(leia.nextDouble());
+
+		System.out.print("Entre com a porcentagem da Bonificação: ");
+		funcionario.setBonus(leia.nextDouble());
+
+		System.out.println("\n--------***********-------------\n");
+
+		System.out.println(funcionario);
+
+		leia.close();
+	}
+
+}

@@ -1,0 +1,40 @@
+package aulas;
+
+import java.util.Scanner;
+
+import aulas.entities.Funcionario;
+import aulas.entities.Pessoa;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		Pessoa funcionario = new Funcionario();
+		Funcionario funcionario1 = (Funcionario)funcionario; 
+
+		System.out.print("Entre com o nome do funcionario: ");
+		funcionario1.setNome(sc.nextLine());
+		System.out.print("Entre com a idade do funcionario: ");
+		funcionario1.setIdade(sc.nextInt());
+		System.out.print("Entre com a data de nascimento do funcionario: ");
+		sc.nextLine();
+		funcionario1.setDataNascimento(sc.nextLine());
+		System.out.print("Entre com o cpf do funcionario: ");
+		funcionario1.setCpf(sc.nextLong());
+
+		System.out.println("----------- Dado salarial do Funcionario ------------");
+
+		System.out.print("Entre com o salario Bruto do funcionario: ");
+		funcionario1.setSalarioBruto(sc.nextDouble());
+		System.out.print("Entre com a porcentagem do inss: ");
+		funcionario1.setInss(sc.nextDouble());
+		System.out.print("Entre com a porcentagem do IR(imposto de Renda): ");
+		funcionario1.setIr(sc.nextDouble());
+		System.out.print(funcionario1);
+
+		sc.close();
+
+	}
+
+}
